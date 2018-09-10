@@ -1,8 +1,9 @@
 ### 常用深度学习框架
 
 深度学习研究的热潮持续高涨，各种开源深度学习框架也层出不穷，其中包括TensorFlow、Caffe、Keras、CNTK、Torch7、MXNet、Leaf、Theano、DeepLearning4、Lasagne、Neon等。我们参考开源的测试结果，结合自己整理的数据，针对主流的深度学习框架进行简单对比及介绍。
+
 | 框架 | 机构 | 支持语言 | Stars | Forks | 
-| --- | :-------------------------------: | :---------------------------------: |
+| --- | :-----------------: | :----------------------: | :----------------------: | :----------------------: |
 | [Caffe](https://github.com/BVLC/caffe)                      | BVLC        | C++/Python/Matlab      |    25480   | 15560
 | [CNTK](https://github.com/Microsoft/CNTK)                   | Microsoft   |   C++                  |    15083   | 4020
 | [Keras](notebooks/Keras_TF_CNN.ipynb)                       | fchollet    | Python                 |    33332   | 12563
@@ -79,7 +80,7 @@
 目前众多的深度学习框架，使用者只要选择适合自己的框架即可，我们在日常使用中，考虑到训练的快捷程度，部署难度以及对CNN、RNN模型的直接程度，推荐以下几款深度学习框架。
 
 
-####CNN & RNN
+#### CNN & RNN
 
 1. Keras
 Keras 提供了简单易用的 API 接口，入门快，特别适合初学者入门。其后端采用 TensorFlow, CNTK，以及 Theano。另外，Deeplearning4j 的 Python 也是基于 Keras 实现的。Keras 几乎已经成了 Python 神经网络的接口标准。
@@ -90,7 +91,7 @@ Keras 提供了简单易用的 API 接口，入门快，特别适合初学者入
 3. MXNet
 已被亚马逊选为 AWS 上的深度学习框架，支持动态图计算。MXNet 有许多中国开发者，因而有非常良好的中文文档支持。Gluon 接口使得MXNet像 Keras 一样简单易用。
 
-####关于RNN
+#### 关于RNN
 
 1. 大多数框架（例如Tensorflow）上，都有多个RNN实现/内核; 一旦降低到cudnn LSTM / GRU级别，执行速度是最快的。但是，这种实现不太灵活（例如，可能希望层归一化），并且接下来如果在CPU上运行推理可能会出现问题。
 
